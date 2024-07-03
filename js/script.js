@@ -1,179 +1,91 @@
-const careersBox = document.querySelector('.careers');
-const sliderBox = document.querySelector('.slider');
-const projectsBox = document.querySelector('.projects-slider');
-const navbarNav = document.querySelector('.navbar-nav');
-const customNavbar = document.querySelector('.custom-navbar');
+const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
 
-// const navbarData = [
-//     {
-//         id: 0,
-//         navItem: "home",
-//         navLink: "https://www.google.com/"
-//     },
-//     {
-//         id: 1,
-//         navItem: "about us",
-//         navLink: "https://www.google.com/"
-//     },
-//     {
-//         id: 2,
-//         navItem: "activite",
-//         navLink: "https://www.google.com/"
-//     },
-//     {
-//         id: 3,
-//         navItem: "careers",
-//         navLink: "https://www.google.com/"
-//     },
-//     {
-//         id: 4,
-//         navItem: "news & media",
-//         navLink: "https://www.google.com/"
-//     },
-//     {
-//         id: 5,
-//         navItem: "sustainability",
-//         navLink: "https://www.google.com/"
-//     },
-//     {
-//         id: 6,
-//         navItem: "investor relations",
-//         navLink: "https://www.google.com/"
-//     }
-// ]
+const toggleNav = () => {
+    navbar.classList.toggle("active");
+    mobileNav.classList.toggle("hamburger-active");
+};
+mobileNav.addEventListener("click", () => toggleNav());
 
-// navbarData.map(index => navbarNav.innerHTML += `
-//     <a class="nav-link text-black mx-2" href="`+ index.navLink + `">` + index.navItem + `</a>`
-// )
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
-const demoCareerData = [
-    {
-        id: 0,
-        title: "Puplis and school leavers",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        buttonLink: "https://www.google.com/"
-    },
-    {
-        id: 1,
-        title: "students",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        buttonLink: "#"
-    },
-    {
-        id: 2,
-        title: "graduates",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        buttonLink: "#"
-    },
-    {
-        id: 3,
-        title: "professionals",
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-        buttonLink: "#"
-    }
-]
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
-demoCareerData.map(el => careersBox.innerHTML += `
-<div class="col-3 p-0 m-0 border borderlight border-3 d-flex align-items-end careers-card  cursor-pointer text-white text-capitalize">
-<div class="w-100 p-3">
-    <h3 class="m-0 p-0">`+ el.title + `</h3>
-    <p>`+ el.content + `</p>
-    <a href="`+ el.buttonLink + `" target="_self" class="btn btn-primary text-capitalize rounded-0">more info</a>
-</div>
-</div>
-`)
-
-
-
-const demoSliderData = [
-    {
-        id: 0,
-        shortTitle: "we build",
-        title: "Berlin",
-        imageName: "berlin",
-        buttonLink: "https://www.google.com/"
-    },
-    {
-        id: 1,
-        shortTitle: "we build",
-        title: "new york",
-        imageName: "new-york",
-        buttonLink: "#"
-    },
-    {
-        id: 2,
-        shortTitle: "we build",
-        title: "prague",
-        imageName: "hamburg",
-        buttonLink: "#"
-    },
-    {
-        id: 3,
-        shortTitle: "we build",
-        title: "hamburg",
-        imageName: "prague",
-        buttonLink: "#"
-    }
-]
-
-demoSliderData.map(index => sliderBox.innerHTML += `
-<div class="col-3 p-0 m-0 border borderlight border-3 d-flex align-items-end slider-card cursor-pointer position-relative overflow-hidden text-white text-capitalize">
-<img class="w-100 p-0 m-0 d-flex " src="images/`+ index.imageName + `.jpg"/>
-<div class="w-100 p-3 position-absolute bottom-0">
-<span class="m-0 p-0 text-capitalize">`+ index.shortTitle + `</span>
-    <h3 class="m-0 p-0 mb-3">`+ index.title + `</h3>
-    <a href="`+ index.buttonLink + `" target="_self" class="btn btn-primary rounded-0">more info</a>
-</div>
-</div>
-`)
-
-const projectsSlideData = [
-    {
-        id: 0,
-        shortTitle: "Hamburg, Germany",
-        title: " Elbe Philharmonic Hall",
-        imageName: "berlin",
-        buttonLink: "https://www.google.com/"
-    },
-    {
-        id: 1,
-        shortTitle: "Edinburgh, Scotland",
-        title: " Queensferry Crossing",
-        imageName: "new-york",
-        buttonLink: "#"
-    },
-    {
-        id: 2,
-        shortTitle: " New York, USA",
-        title: "The Spiral",
-        imageName: "hamburg",
-        buttonLink: "#"
-    },
-    {
-        id: 3,
-        shortTitle: "Sydney, Australia",
-        title: " Sydney Metro",
-        imageName: "prague",
-        buttonLink: "#"
-    }
-]
-
-projectsSlideData.map(index => projectsBox.innerHTML += `
-<div class="col-3 p-0 m-0 border borderlight border-3 d-flex align-items-end slider-card cursor-pointer position-relative overflow-hidden text-white text-capitalize">
-<img class="w-100 p-0 m-0 d-flex " src="images/`+ index.imageName + `.jpg"/>
-<div class="w-100 p-3 position-absolute bottom-0">
-<span class="m-0 p-0 text-capitalize">`+ index.shortTitle + `</span>
-    <h3 class="m-0 p-0 mb-3">`+ index.title + `</h3>
-    <a href="`+ index.buttonLink + `" target="_self" class="btn btn-primary text-capitalize rounded-0">look at project</a>
-</div>
-</div>
-`)
-
-window.addEventListener('scroll', () => {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        customNavbar.classList.add('on-scroll');
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
     } else {
-        customNavbar.classList.remove('on-scroll');
+        mybutton.style.display = "none";
     }
-})
+}
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
+// Function to check if an element is in viewport
+function isElementInViewport(elem) {
+    var bounding = elem.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle scroll event
+function handleScroll() {
+    var listItems = document.querySelectorAll('.list-item');
+
+    listItems.forEach(function (item) {
+        if (isElementInViewport(item)) {
+            item.classList.add('visible');
+        }
+    });
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Initial check on page load
+handleScroll();
+
+
+
+// for mission and vision page values
+
+
+// Function to check if an element is in the viewport
+function isMsElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle scroll event
+function MshandleScroll() {
+    const listItems = document.querySelectorAll('.values-list');
+
+    listItems.forEach(function (item) {
+        if (isMsElementInViewport(item)) {
+            item.classList.add('visible-values');
+        }
+    });
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', MshandleScroll);
+
+// Initial check on page load
+MshandleScroll();
