@@ -225,6 +225,10 @@ nav ul li a:hover {
   border: 1px solid white;
 }
 
+.carousel-content a:hover {
+  color: white;
+}
+
 @media (max-width: 768px) {
   .carousel-content h1 {
     font-size: 2rem;
@@ -439,6 +443,12 @@ nav ul li a:hover {
 
 
 /* services style ended */
+
+
+.How-We-Do-front h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
 
 
 #myBtn {
@@ -790,7 +800,6 @@ button {
   background-color: #c6b069;
   margin-top: 50px;
   margin-bottom: 50px;
-
 }
 
 .values-parent {
@@ -844,11 +853,6 @@ button {
   color: white;
 }
 
-.fa-gem {
-  width: 53px;
-  height: 23px;
-  margin-right: 3px;
-}
 
 .value-img {
   width: 250px;
@@ -904,7 +908,7 @@ button {
     justify-content: center;
     align-items: center;
     box-shadow: none;
-    padding-right: 0;
+    padding: 5px;
     gap: 0px;
   }
 
@@ -919,7 +923,11 @@ button {
   }
 
   .values-parent {
-    margin-left: 0px;
+    margin: 0;
+  }
+
+  .values-list {
+    margin-left: 0;
   }
 
   .value-img {
