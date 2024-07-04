@@ -230,6 +230,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  .carousel-content{
+    width: 300px;
+  }
   .carousel-content h1 {
     font-size: 2rem;
     /* Adjust font size for smaller screens */
@@ -375,14 +378,6 @@ nav ul li a:hover {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .service-box-parent {
-    display: grid;
-    grid-template-columns: auto;
-    /* Single column layout on smaller screens */
-  }
-}
-
 .service-box {
   width: 368px;
   background-color: white;
@@ -441,11 +436,35 @@ nav ul li a:hover {
 }
 
 
+@media (max-width: 768px) {
+  .services-box-container {
+    padding: 25px;
+
+  }
+
+  .service-box-parent {
+    display: grid;
+    grid-template-columns: auto;
+    /* Single column layout on smaller screens */
+  }
+
+  .service-box {
+    width: 350px;
+  }
+
+  .service-title h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+}
+
 
 /* services style ended */
 
 
-.How-We-Do-front h2{
+.How-We-Do-front h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -902,6 +921,14 @@ button {
 
 
 @media only screen and (max-width: 768px) {
+
+  .mv-txt {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
   .ms-box {
     background-image: none;
     display: flex;
