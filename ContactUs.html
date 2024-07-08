@@ -139,28 +139,29 @@
                 <img src="images/logo.png" alt="IMG">
             </div>
 
-            <form class="contact1-form validate-form" action="https://formspree.io/f/mjvqryed" method="POST">
+            <form class="contact1-form validate-form" action="https://api.web3forms.com/submit" method="POST">
                 <span class="contact1-form-title">
                     Get in touch
                 </span>
 
+                <input type="hidden" name="access_key" value="e0ef7cb7-5cc7-40b5-a0a8-c60913d7b345">
                 <div class="wrap-input1 validate-input" data-validate="Name is required">
                     <input class="input1" type="text" name="name" placeholder="Name">
                     <span class="shadow-input1"></span>
                 </div>
 
                 <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input1" type="text" name="email" placeholder="Email">
+                    <input class="input1" type="text" name="email" placeholder="Email" id="email">
                     <span class="shadow-input1"></span>
                 </div>
 
-                <div class="wrap-input1 validate-input" data-validate="Subject is required">
-                    <input class="input1" type="text" name="subject" placeholder="Subject">
+                <div class="wrap-input1 validate-input" data-validate="Valid mobile number is required: 1234567890">
+                    <input class="input1" type="text" name="mobile" placeholder="Mobile Number">
                     <span class="shadow-input1"></span>
                 </div>
 
-                <div class="wrap-input1 validate-input" data-validate="Message is required">
-                    <textarea class="input1" name="message" placeholder="Message"></textarea>
+                <div class="wrap-input1 validate-input" data-validate="City is required">
+                    <input class="input1" type="text" name="City" placeholder="City">
                     <span class="shadow-input1"></span>
                 </div>
 
@@ -223,8 +224,6 @@
     </div>
 
 
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
