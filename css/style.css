@@ -230,9 +230,10 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-  .carousel-content{
+  .carousel-content {
     width: 300px;
   }
+
   .carousel-content h1 {
     font-size: 2rem;
     /* Adjust font size for smaller screens */
@@ -536,14 +537,13 @@ section {
 .footer {
   background-color: #f9f9ff;
   padding-top: 80px;
-  padding-bottom: 40px;
 }
 
 /*END FOOTER SOCIAL DESIGN*/
 
 @media only screen and (max-width:768px) {
   .single_footer {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -712,15 +712,20 @@ button {
 }
 
 @media only screen and (max-width:768px) {
+  .social_profile {
+    margin-top: 0;
+  }
+
   .social_profile ul li a {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
   }
 }
 
 @media only screen and (max-width:480px) {
   .social_profile ul li a {
-    width: 40px;
+    width: 20px;
     height: 40px;
     line-height: 40px;
   }
@@ -750,6 +755,14 @@ button {
 
 .copyright a:hover {
   color: #ff3666;
+}
+
+
+@media only screen and (max-width:768px) {
+  .copyright {
+    margin-top: 0;
+    padding-top: 5px;
+  }
 }
 
 
