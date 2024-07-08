@@ -30,6 +30,7 @@
 <body>
 
     <div onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></div>
+    <div id="whtsp-btn" title="Go to top"><i class="fab fa-whatsapp"></i></div>
 
 
     <div class="ms-banner-container">
@@ -42,13 +43,16 @@
                     <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/MissionVision.html">Mission & Vision</a>
+                    <a href="/AboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a href="/index.html#services">Services</a>
                 </li>
                 <li>
                     <a href="/Projects.html">Projects</a>
                 </li>
                 <li>
-                    <a href="/AboutUs.html">About Us</a>
+                    <a href="/MissionVision.html">Mission & Vision</a>
                 </li>
                 <li>
                     <a href="/ContactUs.html">Contact Us</a>
@@ -66,13 +70,16 @@
                     <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="/MissionVision.html">Mission & Vision</a>
+                    <a href="/AboutUs.html">About Us</a>
+                </li>
+                <li>
+                    <a href="/index.html#services">Services</a>
                 </li>
                 <li>
                     <a href="/Projects.html">Projects</a>
                 </li>
                 <li>
-                    <a href="/AboutUs.html">About Us</a>
+                    <a href="/MissionVision.html">Mission & Vision</a>
                 </li>
                 <li>
                     <a href="/ContactUs.html">Contact Us</a>
@@ -92,88 +99,94 @@
 
 
 
-    <div class="container mt-5">
-        <div class="row contact-details-container">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 contact-box">
-                <div class="contact-box-inner">
-                    <div class="contact-img-container">
-                        <img src="/images/phone.png" alt="">
+
+    <div class="container-contact1" id="Contactus">
+        <span class="contact1-form-title">
+            Get in touch
+        </span>
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6 contact1-pic js-tilt" data-tilt>
+                <div class="col-12 contact-box">
+                    <div class="contact-box-inner">
+                        <div class="contact-img-container">
+                            <i class="fa-regular fa-building"></i>
+                        </div>
+                        <div class="contact-content-container">
+                            <div>
+                                <h6>Address</h6>
+                                <p>Door No: 5/242, Kavakkattu building,
+                                    near H.P petrol pump,
+                                    Nedumkandam, Idukki, Kerala, India
+                                    Pin:685553
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-content-container">
-                        +91 8129896670
+                </div>
+                <div class="col-12 contact-box">
+                    <div class="contact-box-inner">
+                        <div class="contact-img-container">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-content-container">
+                            <div>
+                                <h6>Phone</h6>
+                                <p> +91 7510102069</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 contact-box">
+                    <div class="contact-box-inner">
+                        <div class="contact-img-container">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-content-container">
+                            <div>
+                                <h6>Email</h6>
+                                <p> camlgrgroup@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 contact-box">
-                <div class="contact-box-inner">
-                    <div class="contact-img-container">
-                        <img src="/images/email.png" alt="">
+
+            <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+                <form class="contact1-form validate-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="e0ef7cb7-5cc7-40b5-a0a8-c60913d7b345">
+                    <div class="wrap-input1 validate-input" data-validate="Name is required">
+                        <input class="input1" type="text" name="name" placeholder="Name">
+                        <span class="shadow-input1"></span>
                     </div>
-                    <div class="contact-content-container">
-                        +91 8129896670
+
+                    <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input1" type="text" name="email" placeholder="Email" id="email">
+                        <span class="shadow-input1"></span>
                     </div>
-                </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="Valid mobile number is required: 1234567890">
+                        <input class="input1" type="text" name="mobile" placeholder="Mobile Number">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="City is required">
+                        <input class="input1" type="text" name="City" placeholder="City">
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="container-contact1-form-btn">
+                        <button class="contact1-form-btn" type="submit">
+                            <span>
+                                Send Email
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 contact-box">
-                <div class="contact-box-inner">
-                    <div class="contact-img-container">
-                        <img src="/images/adress.png" alt="">
-                    </div>
-                    <div class="contact-content-container text-center">
-                        Door No: 5/242, Kavakkattu building,<br>
-                        near H.P petrol pump,<br>
-                        Nedumkandam, Idukki, Kerala, India <br>
-                        Pin:685553
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-
-
-
-    <div class="contact1">
-        <div class="container-contact1">
-            <div class="contact1-pic js-tilt" data-tilt>
-                <img src="images/logo.png" alt="IMG">
-            </div>
-
-            <form class="contact1-form validate-form" action="https://api.web3forms.com/submit" method="POST">
-                <span class="contact1-form-title">
-                    Get in touch
-                </span>
-
-                <input type="hidden" name="access_key" value="e0ef7cb7-5cc7-40b5-a0a8-c60913d7b345">
-                <div class="wrap-input1 validate-input" data-validate="Name is required">
-                    <input class="input1" type="text" name="name" placeholder="Name">
-                    <span class="shadow-input1"></span>
-                </div>
-
-                <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input1" type="text" name="email" placeholder="Email" id="email">
-                    <span class="shadow-input1"></span>
-                </div>
-
-                <div class="wrap-input1 validate-input" data-validate="Valid mobile number is required: 1234567890">
-                    <input class="input1" type="text" name="mobile" placeholder="Mobile Number">
-                    <span class="shadow-input1"></span>
-                </div>
-
-                <div class="wrap-input1 validate-input" data-validate="City is required">
-                    <input class="input1" type="text" name="City" placeholder="City">
-                    <span class="shadow-input1"></span>
-                </div>
-
-                <div class="container-contact1-form-btn">
-                    <button class="contact1-form-btn" type="submit">
-                        <span>
-                            Send Email
-                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-            </form>
         </div>
     </div>
 
@@ -186,9 +199,10 @@
                         <h4>Navigate</h4>
                         <ul>
                             <li><a href="/index.html">Home</a></li>
-                            <li><a href="/MissionVision.html">Mission & Vision</a></li>
-                            <li><a href="/Projects.html">Projects</a></li>
                             <li><a href="/AboutUs.html">About Us </a></li>
+                            <li><a href="/index.html#services">Services </a></li>
+                            <li><a href="/Projects.html">Projects</a></li>
+                            <li><a href="/MissionVision.html">Mission & Vision</a></li>
                             <li><a href="/ContactUs.html">Contact Us</a></li>
                         </ul>
                     </div>
@@ -207,8 +221,8 @@
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="social_profile">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61553568909062&mibextid=ZbWKwL"><i
+                                        class="fab fa-facebook-f"></i></a></li>
                             <li><a href="https://www.instagram.com/camlgr_india_pvt_ltd/"><i
                                         class="fab fa-instagram"></i></a></li>
                         </ul>
@@ -217,7 +231,7 @@
             </div><!--- END ROW -->
             <div class="row">
                 <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <p class="copyright">Camlgr.</p>
+                    <p class="copyright">Camlgr india pvt ltd</p>
                 </div><!--- END COL -->
             </div><!--- END ROW -->
         </div><!--- END CONTAINER -->

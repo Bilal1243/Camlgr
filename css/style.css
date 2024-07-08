@@ -254,16 +254,19 @@ nav ul li a:hover {
 
 /* home about us styles */
 
+
 .home-about-header {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
+  font-size: 30px;
 }
 
 .home-about-content {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .5px;
   line-height: 24px;
+  font-size: 15px;
 }
 
 
@@ -472,10 +475,10 @@ nav ul li a:hover {
 
 
 #myBtn {
-  display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: -80px;
+  /* Hide below view */
+  right: 15px;
   z-index: 99;
   border: none;
   outline: none;
@@ -486,11 +489,181 @@ nav ul li a:hover {
   text-align: center;
   width: 50px;
   padding: 15px;
+  transition: bottom 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+#myBtn.showbtn {
+  bottom: 20px;
+  /* Show in view */
+  opacity: 1;
 }
 
 #myBtn:hover {
   background-color: #555;
 }
+
+#whtsp-btn {
+  position: fixed;
+  bottom: -80px;
+  /* Hide below view */
+  right: 15px;
+  /* Adjust as needed to avoid overlap with #myBtn */
+  z-index: 99;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: rgb(197, 211, 39);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+  padding: 15px;
+  transition: bottom 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+#whtsp-btn.showwhtsp {
+  bottom: 80px;
+  /* Show in view */
+  opacity: 1;
+}
+
+#whtsp-btn:hover {
+  background-color: #555;
+}
+
+
+
+/* team styles start*/
+
+
+
+.team {
+  position: relative;
+  width: 100%;
+  padding: 45px 0 15px 0;
+}
+
+.team .team-item {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.team .team-img {
+  position: relative;
+}
+
+.team .team-img img {
+  width: 100%;
+}
+
+.team .team-text {
+  position: relative;
+  padding: 25px 15px;
+  text-align: center;
+  background: #030f27;
+  transition: .5s;
+}
+
+.team .team-text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fdbe33;
+  transition: .5s;
+}
+
+.team .team-text p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.team .team-item:hover .team-text {
+  background: #fdbe33;
+}
+
+.team .team-item:hover .team-text h2 {
+  color: #030f27;
+  letter-spacing: 1px;
+}
+
+.team .team-social {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: -50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0;
+}
+
+.team .team-social a {
+  position: relative;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.team .team-item:hover .team-social a:first-child {
+  background: #00acee;
+  left: 50px;
+  transition: .3s 0s;
+}
+
+.team .team-item:hover .team-social a:nth-child(2) {
+  background: #3b5998;
+  left: 50px;
+  transition: .3s .1s;
+}
+
+.team .team-item:hover .team-social a:nth-child(3) {
+  background: #0e76a8;
+  left: 50px;
+  transition: .3s .2s;
+}
+
+.team .team-item:hover .team-social a:nth-child(4) {
+  background: #3f729b;
+  left: 50px;
+  transition: .3s .3s;
+}
+
+.section-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.section-header p {
+  color: #fdbe33;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .section-header h2 {
+      font-size: 30px;
+  }
+}
+
+
+
+/* team styles end*/
+
 
 
 a,
@@ -535,7 +708,7 @@ section {
 }
 
 .footer {
-  background-color: #f9f9ff;
+  background-color: #ebebeb;
   padding-top: 80px;
 }
 
@@ -773,10 +946,10 @@ button {
 
 
 .ms-banner-container {
-  background-image: url('/images/Services/house.jpg');
+  background-image: url('/images/projects/project-19.jpg');
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -787,7 +960,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(23, 19, 19, 0.611);
+  background-color: rgba(47, 39, 39, 0.611);
   z-index: 1;
 }
 

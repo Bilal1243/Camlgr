@@ -66,7 +66,6 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
   color: var(--text-color);
   overflow-x: hidden;
   transition: background-color .4s;
@@ -135,16 +134,6 @@ img {
   position: relative;
 }
 
-.section__title-1::after,
-.section__title-2::after {
-  content: "";
-  width: 40px;
-  height: 28px;
-  background-color: hsla(14, 98%, 50%, 0.2);
-  position: absolute;
-  top: -4px;
-  right: -8px;
-}
 
 .section__title-2::after {
   top: initial;
@@ -217,10 +206,7 @@ img {
 }
 
 /*=============== ABOUT ===============*/
-.about {
-  background-color: var(--container-color);
-  transition: background-color 0.4s;
-}
+
 
 .about__container {
   row-gap: 0;
@@ -244,22 +230,13 @@ img {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
 
-.about__shadow,
+
 .about__line,
 .about__box {
   position: absolute;
   border-radius: 0.75rem;
 }
 
-.about__shadow {
-  width: 150px;
-  height: 385px;
-  background-color: var(--body-color);
-  top: -2.5rem;
-  right: -3.5rem;
-  border-bottom: 4px solid var(--first-color);
-  transition: background-color 0.4s;
-}
 
 .about__perfil .geometric-box {
   top: 1.5rem;
@@ -320,10 +297,7 @@ img {
     width: 180px;
   }
 
-  .about__shadow {
-    height: 330px;
-    right: -2.5rem;
-  }
+
 }
 
 /* For medium devices */
@@ -360,13 +334,7 @@ img {
     border: 6px solid var(--white-color);
   }
 
-  .about__shadow {
-    width: 240px;
-    height: 615px;
-    top: -4rem;
-    right: -5.5rem;
-    border-bottom: 6px solid var(--first-color);
-  }
+
 
   .about__perfil .geometric-box {
     right: -4rem;

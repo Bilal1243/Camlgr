@@ -9,15 +9,18 @@ mobileNav.addEventListener("click", () => toggleNav());
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
+let whatsappBtn = document.getElementById("whtsp-btn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+        mybutton.classList.add('showbtn');
+        whatsappBtn.classList.add('showwhtsp');
     } else {
-        mybutton.style.display = "none";
+        mybutton.classList.remove('showbtn');
+        whatsappBtn.classList.remove('showwhtsp');
     }
 }
 
@@ -26,6 +29,7 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
 
 
 
@@ -89,3 +93,14 @@ window.addEventListener('scroll', MshandleScroll);
 
 // Initial check on page load
 MshandleScroll();
+
+
+
+document.getElementById('whtsp-btn').addEventListener('click', function () {
+    const phoneNumber = '+917510102069'; // Replace with the target phone number
+    const message = 'Hello! I am interested in your construction services and would like to discuss my project with you.';
+    // Basic message for a construction company
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.location.href = whatsappUrl;
+});
