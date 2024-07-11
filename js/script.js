@@ -104,3 +104,13 @@ document.getElementById('whtsp-btn').addEventListener('click', function () {
 
     window.location.href = whatsappUrl;
 });
+
+
+document.getElementById('whatsappButton').addEventListener('click', function () {
+    const phoneNumber = '+917510102069'; // Replace with the target phone number
+    const message = 'Hello! I am interested in your construction services and would like to discuss my project with you.';
+    // Basic message for a construction company
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.location.href = whatsappUrl;
+});
