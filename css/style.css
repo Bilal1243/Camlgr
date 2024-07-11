@@ -513,7 +513,7 @@ nav ul li a:hover {
   border: none;
   outline: none;
   border-radius: 50%;
-  background-color: rgb(197, 211, 39);
+  background-color: #25D366;
   color: white;
   cursor: pointer;
   text-align: center;
@@ -538,7 +538,6 @@ nav ul li a:hover {
 /* team styles start*/
 
 
-
 .team {
   position: relative;
   width: 100%;
@@ -549,33 +548,48 @@ nav ul li a:hover {
   position: relative;
   margin-bottom: 30px;
   overflow: hidden;
+  height: 275px;
+  width: 275px;
+  cursor: pointer;
 }
 
 .team .team-img {
   position: relative;
+  height: 74%;
+  /* Adjust the height to your preference */
 }
 
 .team .team-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  /* Adjust the vertical position as needed */
 }
+
 
 .team .team-text {
   position: relative;
-  padding: 25px 15px;
+  padding: 8px 8px;
   text-align: center;
   background: #030f27;
   transition: .5s;
+  height: 26%;
+  /* Adjust the height to your preference */
 }
 
 .team .team-text h2 {
-  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
   font-weight: 600;
   color: #fdbe33;
   transition: .5s;
 }
 
 .team .team-text p {
+  font-family: "Poppins", sans-serif;
   margin: 0;
+  font-size: 13px;
   color: #ffffff;
 }
 
@@ -641,6 +655,7 @@ nav ul li a:hover {
 }
 
 .section-header p {
+  font-family: "Poppins", sans-serif;
   color: #fdbe33;
   font-size: 18px;
   font-weight: 600;
@@ -648,18 +663,57 @@ nav ul li a:hover {
 }
 
 .section-header h2 {
+  font-family: "Poppins", sans-serif;
   margin: 0;
   position: relative;
   font-size: 50px;
   font-weight: 700;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
+  .team .team-item {
+    height: 325px;
+    /* Adjust height for screens <= 1199px */
+  }
+
+  .team .team-text {
+    padding: 12px 12px;
+    /* Reduce padding for smaller screens */
+  }
+
   .section-header h2 {
-      font-size: 30px;
+    font-size: 40px;
+    /* Adjust font size for smaller screens */
   }
 }
 
+@media (max-width: 767.98px) {
+  .team .team-item {
+    height: 300px;
+    /* Adjust height for screens <= 767px */
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+    /* Adjust font size for smaller screens */
+  }
+
+  .team .team-img {
+    position: relative;
+    height: 75%;
+    /* Adjust the height to your preference */
+  }
+
+  .team .team-text {
+    position: relative;
+    padding: 10px 10px;
+    text-align: center;
+    background: #030f27;
+    transition: .5s;
+    height: 25%;
+    /* Adjust the height to your preference */
+  }
+}
 
 
 /* team styles end*/
@@ -1002,7 +1056,6 @@ button {
 
 
 .values-container {
-  background-color: #c6b069;
   margin-top: 50px;
   margin-bottom: 50px;
 }
