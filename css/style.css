@@ -1055,53 +1055,81 @@ button {
 }
 
 
+
 .values-container {
-  margin-top: 50px;
+  background-color: #c6b069;
+  min-height: 500px;
   margin-bottom: 50px;
 }
 
-.values-parent {
-  margin-left: 20px;
+
+.values-title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.vision-head h1 {
+.values-title h2 {
+  color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
-  color: white;
-  font-weight: 600;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 10px;
+  /* Darker color for better readability */
 }
 
-.values-list {
-  margin-left: 20px;
-  font-family: "Poppins", sans-serif;
+.value-list-container {
+  width: fit-content;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Centers the list horizontally */
+  padding: 0;
+  /* Remove default padding */
+  list-style-type: none;
+  /* Remove bullet points */
+}
+
+.value-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   color: black;
   font-family: "Cairo";
   font-size: 15px;
   margin-bottom: 8px;
-  cursor: pointer;
   opacity: 0;
   transform: translateY(20px);
+  /* Start slightly below its final position */
   transition: opacity 0.8s ease, transform 0.8s ease;
+  cursor: pointer;
 }
 
-.values-list.visible-values {
+.visible-values {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(0);
 }
 
-
-.values-list:hover {
-  background-color: #000;
+.value-item:hover {
   color: #c6b069;
+  background-color: black;
+
 }
 
-.value-icon {
+.verify-btn {
+  width: 23px;
+  height: 23px;
+  margin-right: 3px;
+}
+
+.value-btn {
   width: 23px;
   height: 23px;
   margin-right: 3px;
@@ -1111,11 +1139,6 @@ button {
   color: white;
 }
 
-
-.value-img {
-  width: 250px;
-  height: 250px;
-}
 
 
 

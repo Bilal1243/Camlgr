@@ -11,7 +11,7 @@
     <meta
         content="Learn more about Camlgr India Pvt Ltd, a leading construction company dedicated to sustainable development and engineering excellence. Meet our team and discover our company values and history."
         name="description">
-        <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
 
 
 
@@ -212,6 +212,18 @@
     </div>
 
 
+
+    <script>
+
+        document.getElementById('whatsappButton').addEventListener('click', function () {
+            const phoneNumber = '+917510102069'; // Replace with the target phone number
+            const message = 'Hello! I am interested in your construction services and would like to discuss my project with you.';
+            // Basic message for a construction company
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            window.location.href = whatsappUrl;
+        });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
