@@ -9,14 +9,14 @@ mobileNav.addEventListener("click", () => toggleNav());
 
 
 
-window.addEventListener('scroll', function() {
-    const logo = document.getElementById('scroll-logo');
-    if (window.scrollY > 100) { // Adjust the scroll position as needed
-      logo.style.display = 'block';
-    } else {
-      logo.style.display = 'none';
-    }
-  });
+// window.addEventListener('scroll', function() {
+//     const logo = document.getElementById('scroll-logo');
+//     if (window.scrollY > 100) { // Adjust the scroll position as needed
+//       logo.style.display = 'block';
+//     } else {
+//       logo.style.display = 'none';
+//     }
+//   });
   
 
 
