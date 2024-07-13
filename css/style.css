@@ -23,6 +23,21 @@ body {
 
 
 
+#scroll-logo {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: none; /* Initially hidden */
+  opacity: 0.4;
+}
+
+#scroll-logo img {
+  width: 50px; /* Adjust the size as needed */
+  height: auto;
+}
+
+
+
 /* Navbar Styles */
 nav {
   padding: 30px 5%;
@@ -268,6 +283,8 @@ nav ul li a:hover {
   line-height: 24px;
   font-size: 15px;
 }
+
+
 
 
 

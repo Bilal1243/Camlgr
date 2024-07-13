@@ -7,6 +7,21 @@ const toggleNav = () => {
 };
 mobileNav.addEventListener("click", () => toggleNav());
 
+
+
+window.addEventListener('scroll', function() {
+    const logo = document.getElementById('scroll-logo');
+    if (window.scrollY > 100) { // Adjust the scroll position as needed
+      logo.style.display = 'block';
+    } else {
+      logo.style.display = 'none';
+    }
+  });
+  
+
+
+
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 let whatsappBtn = document.getElementById("whtsp-btn");
