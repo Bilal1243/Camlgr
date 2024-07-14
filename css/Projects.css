@@ -7,9 +7,7 @@ body {
 }
 
 .img-gallery-container {
-    background-image: url('/images/projects/projects-bg.jpeg');
-    background-position: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 
