@@ -17,7 +17,7 @@ mobileNav.addEventListener("click", () => toggleNav());
 //       logo.style.display = 'none';
 //     }
 //   });
-  
+
 
 
 

@@ -256,11 +256,10 @@ nav ul li a:hover {
 
 .carousel-content button:hover {
   border: 1px solid white;
-}
-
-.carousel-content a:hover {
   color: white;
 }
+
+
 
 @media (max-width: 768px) {
   .carousel-content {
@@ -282,35 +281,6 @@ nav ul li a:hover {
 
 
 /* carousel style ending */
-
-
-
-/* home about us styles */
-
-/* .home-about-container {
-  background-color: #f2f2f2;
-}
-
-.home-about-header {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-}
-
-.home-about-content {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  letter-spacing: .5px;
-  line-height: 24px;
-  font-size: 15px;
-} */
-
-
-
-
-
-/* home about us style ends */
-
 
 
 /* turf section style started */
@@ -340,13 +310,22 @@ nav ul li a:hover {
 }
 
 .venue-btn {
-  border: 1px solid black;
-  background-color: transparent;
-  color: black;
+  background-color: #c6b069;
+  color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+
+.venue-content .explore-turf {
+  padding: 15px;
+  background-color: #c6b069;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 
 
@@ -547,12 +526,6 @@ nav ul li a:hover {
 
 
 /* services style ended */
-
-
-.How-We-Do-front h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
 
 
 #myBtn {
@@ -847,8 +820,6 @@ section {
   padding-top: 80px;
 }
 
-/*END FOOTER SOCIAL DESIGN*/
-
 @media only screen and (max-width:768px) {
   .single_footer {
     margin-bottom: 15px;
@@ -919,7 +890,6 @@ section {
   padding: 0;
 }
 
-/*START NEWSLETTER CSS*/
 .subscribe {
   display: block;
   position: relative;
@@ -986,9 +956,6 @@ button {
   border-radius: 0;
 }
 
-/*END NEWSLETTER CSS*/
-
-/*START SOCIAL PROFILE CSS*/
 .social_profile {
   margin-top: 40px;
 }
@@ -1046,7 +1013,6 @@ button {
   border: 0px;
 }
 
-/*END SOCIAL PROFILE CSS*/
 .copyright {
   margin-top: 70px;
   padding-top: 40px;
