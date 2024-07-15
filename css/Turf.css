@@ -23,6 +23,23 @@
     z-index: 1;
 }
 
+@media (max-width: 767px) {
+    .turf-banner-container {
+        height: 100vh;
+    }
+}
+
+.turf-banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(47, 39, 39, 0.611);
+    z-index: 1;
+}
+
 
 .venue-container {
     text-align: center;
