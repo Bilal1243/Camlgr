@@ -283,6 +283,33 @@ nav ul li a:hover {
 /* carousel style ending */
 
 
+/* home about us styles */
+
+
+.home-about-container {
+  background-color: #c6b069;
+}
+
+.home-about-header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: white;
+}
+
+.home-about-content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 24px;
+  font-size: 15px;
+  color: white;
+}
+
+
+/* home about us style ends */
+
+
 /* turf section style started */
 
 
