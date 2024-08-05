@@ -1,9 +1,4 @@
 {
-    "redirects": [
-        {
-            "source": "/(.*)",
-            "destination": "https://camlgr.in/$1",
-            "permanent": true
-        }
-    ]
-}
+    "redirects": []
+  }
+  
