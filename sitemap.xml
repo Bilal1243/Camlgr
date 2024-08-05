@@ -1,39 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- created by Siteliner www.siteliner.com on Aug 5,2024-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://www.camlgr.in/</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>1.00</priority>
-	</url>
-	<url>
-		<loc>https://www.camlgr.in/ContactUs.html</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>0.68</priority>
-	</url>
-	<url>
-		<loc>https://www.camlgr.in/Projects.html</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>0.68</priority>
-	</url>
-	<url>
-		<loc>https://www.camlgr.in/AboutUs.html</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>0.68</priority>
-	</url>
-	<url>
-		<loc>https://www.camlgr.in/MissionVision.html</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>0.67</priority>
-	</url>
-	<url>
-		<loc>https://www.camlgr.in/Services.html</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>0.60</priority>
-	</url>
-	<url>
-		<loc>https://www.camlgr.in/TurfDetails.html</loc>
-		<lastmod>2024-08-05</lastmod>
-		<priority>0.33</priority>
-	</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.camlgr.in/</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.camlgr.in/AboutUs.html</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.camlgr.in/Services.html</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.camlgr.in/Projects.html</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.camlgr.in/MissionVision.html</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.camlgr.in/ContactUs.html</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.camlgr.in/TurfDetails.html</loc>
+  <lastmod>2024-08-05T18:01:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
