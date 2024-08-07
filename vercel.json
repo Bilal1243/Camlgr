@@ -13,7 +13,7 @@
   "redirects": [
     {
       "source": "/sitemap.xml",
-      "destination": "https://camlgr.vercel.app/sitemap.xml",
+      "destination": "https://camlgr.in/sitemap.xml",
       "permanent": true
     },
     {
